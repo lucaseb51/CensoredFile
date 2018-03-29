@@ -1,4 +1,4 @@
-//Author:
+//Author:Lucas Eastburn
 #include <iostream>
 #include <fstream>
 
@@ -12,6 +12,26 @@ int main()
   //Read from the file opened by in, and the first letter (either upper or
   //lower case) should be assigned to first and the last letter (again in
   //either case) from the file to the variable last
+do{
+    in>>current;
+    if(current>='A'&&current<='Z'){
+        if(first==' '){
+            first=current;
+        }else{
+            last=current;
+        }
+
+    }else if(current>='a'&&current<='z'){
+        if(first==' '){
+            first=current;
+        }else{
+            last=current;
+        }
+    }
+
+}while(!in.eof());
+
+
 
 
 
